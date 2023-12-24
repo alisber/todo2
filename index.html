@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/javascript-basics.js"></script>
+    </head>
+    <body>
+      <div class="w-75 mx-auto py-5">
+        <h1 class="mb-4 text-center">BookMarker</h1>
+        <div class="bk"></div>
+        <h2>
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <label for="productnameinput" class="text-capitalize mb-3"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+        <input type="text" oninput="validateproduct(this.value)" id="productnameinput" class="form-control mb-3" placeholder="BookName">
+        <label for="productpriceinput" class="text-capitalize mb-3 mt-2"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+        <input type="text" id="productpriceinput" class="form-control mb-3" placeholder="Website URL">
+        <button class="btn btn-outline-primary" onclick="addproduct()">submit</button>
+    </div>
+    <div class="w-76 mx-auto">
+        <table class="table text-center">
+            <thead>
+                <td>index</td>
+                <td>Website Name</td>
+                <td>Visit</td>
+                <td>Update</td>
+                <td>Delete</td>
+            </thead>
+            <tbody id="tablebody">
+            </tbody>
+        </table>
+    </div>
+    </body>
+    <script src="main2.js"></script>
+</html>

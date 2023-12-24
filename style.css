@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+}
+
+button{
+    border: none;
+    margin-left: 520px;
+    color: white;
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    position: relative;
+}
+
+h1{
+    color: red;
+    font-family: "Pacifico", cursive;
+}
+
+.bk{
+    margin-top: -40px;
+    margin-left: 460px;
+    width: 230px;
+    height: 10px;
+    background-color: darkgoldenrod;
+    z-index: -1;
+    transition-duration: 1s;
+}
+
+.bk:hover{
+    height: 50px;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

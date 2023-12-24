@@ -1,0 +1,926 @@
+
+:root{
+    --main-color:#4726e1;
+}
+
+.text-main{
+    color: var(--main-color);
+}
+
+.bg-mynav{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.home{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.home .container ul{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    border: 1px solid black;
+    border: none;
+}
+
+
+.middle{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+
+.hero p{
+    font-size: 60px;
+}
+
+.typinghero::after{
+    content: "";
+    animation-name: typing;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing{
+    0%{content: "|";}
+    1%{content: "D|";}
+    2%{content: "De|";}
+    3%{content: "Dev|";}
+    4%{content: "Deve|";}
+    5%{content: "Devel|";}
+    6%{content: "Develo|";}
+    7%{content: "Develop|";}
+    8%{content: "Develope|";}
+    9%{content: "Developer|";}
+    10%{content: "Developer|";}
+    11%{content: "Developer|";}
+    12%{content: "Developer|";}
+    13%{content: "Developer|";}
+    14%{content: "Developer|";}
+    15%{content: "Developer|";}
+    16%{content: "Developer|";}
+    17%{content: "Developer|";}
+    18%{content: "Developer|";}
+    19%{content: "Developer|";}
+    20%{content: "Developer|";}
+    21%{content: "Developer|";}
+    22%{content: "Develope|";}
+    23%{content: "Develop|";}
+    24%{content: "Develo|";}
+    25%{content: "Devel|";}
+    26%{content: "Deve|";}
+    27%{content: "Dev|";}
+    28%{content: "De|";}
+    29%{content: "D|";}
+    30%{content: "|";}
+    31%{content: "D|";}
+    32%{content: "De|";}
+    33%{content: "Des|";}
+    34%{content: "Desi|";}
+    35%{content: "Desig|";}
+    36%{content: "Design|";}
+    37%{content: "Designe|";}
+    38%{content: "Designer|";}
+    39%{content: "Designer|";}
+    40%{content: "Designer|";}
+    41%{content: "Designer|";}
+    42%{content: "Designer|";}
+    43%{content: "Designer|";}
+    44%{content: "Designer|";}
+    45%{content: "Designer|";}
+    46%{content: "Designer|";}
+    47%{content: "Designer|";}
+    48%{content: "Designer|";}
+    49%{content: "Designer|";}
+    50%{content: "Designer|";}
+    51%{content: "Designe|";}
+    52%{content: "Design|";}
+    53%{content: "Desig|";}
+    54%{content: "Desi|";}
+    55%{content: "Des|";}
+    56%{content: "De|";}
+    57%{content: "D|";}
+    58%{content: "|";}
+    59%{content: "L|";}
+    60%{content: "La|";}
+    61%{content: "Lar|";}
+    62%{content: "Larr|";}
+    63%{content: "Larry|";}
+    64%{content: "Larry |";}
+    65%{content: "Larry D|";}
+    66%{content: "Larry Da|";}
+    67%{content: "Larry Dan|";}
+    68%{content: "Larry Dani|";}
+    69%{content: "Larry Danie|";}
+    70%{content: "Larry Daniel|";}
+    71%{content: "Larry Daniels|";}
+    72%{content: "Larry Daniels|";}
+    73%{content: "Larry Daniels|";}
+    74%{content: "Larry Daniels|";}
+    75%{content: "Larry Daniels|";}
+    76%{content: "Larry Daniels|";}
+    77%{content: "Larry Daniels|";}
+    78%{content: "Larry Daniels|";}
+    79%{content: "Larry Daniels|";}
+    80%{content: "Larry Daniels|";}
+    81%{content: "Larry Daniels|";}
+    82%{content: "Larry Daniels|";}
+    83%{content: "Larry Daniels|";}
+    84%{content: "Larry Daniel|";}
+    85%{content: "Larry Danie|";}
+    86%{content: "Larry Dani|";}
+    87%{content: "Larry Dan|";}
+    88%{content: "Larry Da|";}
+    89%{content: "Larry D|";}
+    90%{content: "Larry |";}
+    91%{content: "Larry|";}
+    92%{content: "Larr|";}
+    93%{content: "Lar|";}
+    94%{content: "La|";}
+    95%{content: "L|";}
+    100%{content: "|";}
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    border-radius: 1% 1%;
+    width: 200px;
+}
+
+
+.icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    border-radius: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: 35px;
+}
+
+.icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    border-radius: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: 35px;
+}
+
+.icon3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    border-radius: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: 35px;
+}
+
+.icon4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    border-radius: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: 35px;
+}
+
+.icon5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    border-radius: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: 35px;
+}
+
+.icons a{
+    color: white;
+}
+
+.about .container{
+    width: 75%;
+}
+
+.about .container img{
+    height: 500px;
+}
+
+.about h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+
+.about button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180;
+    height: 50;
+
+}
+
+.About .button1{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5% 5%;
+    color: white;
+    transition-duration: 1s;
+}
+
+.about .button1:hover{
+    background-color: white;
+    color: black;
+}
+
+.About .button2{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5% 5%;
+    color: black;
+    transition-duration: 1s;
+}
+
+.about .button2:hover{
+    background-color: black;
+    color: white;
+}
+
+.Services{
+    border: 1px solid black;
+    border: none;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.Services .container{
+    width: 80%;
+}
+
+.Services h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.Services .firstser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 2% 2%;
+}
+
+.Services .firstser .inside1{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 50% 50%;
+    transition-duration: 1s;
+}
+
+.Services .firstser:hover .inside1{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.Services .firstser p{
+    font-size: 19px;
+}
+
+.Services .secondser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 2% 2%;
+}
+
+.Services .secondser .inside2{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 50% 50%;
+    transition-duration: 1s;
+}
+
+.Services .secondser:hover .inside2{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.Services .secondser p{
+    font-size: 19px;
+}
+
+.Services .thirdser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 2% 2%;
+}
+
+.Services .thirdser .inside3{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 50% 50%;
+    transition-duration: 1s;
+}
+
+.Services .thirdser:hover .inside3{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.Services .thirdser p{
+    font-size: 19px;
+}
+
+.Work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    text-align: center;
+}
+
+
+.Work h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.Work h1::after{
+    content: "";
+    width: 300px;
+    height: 10px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -30px;
+    border: 1px solid black;
+    border: none;
+    width: 300px;
+    font-weight: 800;
+    height: 80px;
+}
+
+
+.titles .ul .li{
+    font-size: 20px;
+    width: 80px;
+}
+
+.Work .container{
+    width: 80%;
+}
+
+.container .photo1 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.photo1{
+    border: 1px solid black;
+    border: none;
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.photo1:hover .ab{
+    top: 10;
+}
+
+.photo1 .ab{
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.ab .abc{
+    border: 1px solid black;
+    border: none;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abc .firsticon{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+     color: white;
+     transition-duration: 1s;
+}
+
+.firsticon:hover{
+    background-color: white;
+    color: black;
+}
+
+.abc .secondicon{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+.secondicon:hover{
+    background-color: white;
+    color: black;
+}
+
+.Clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+
+.Clients h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.Clients img{
+    width: 8%;
+}
+
+.clientslayer{
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-indicators{
+    top: 100%;
+    margin-left: 215px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: black;
+}
+
+.carosalpart p{
+    font-size: 14px;
+    color: #748182;
+}
+
+.carosalpart h6{
+    color: #748182;
+}
+
+.acheive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    text-align: center;
+}
+
+.acheive .container{
+    width: 1200px;
+}
+
+.acheive .container i{
+    font-size: 35px;
+}
+
+.acheive .container h2{
+    font-weight: 800;
+}
+
+.acheive .container h4{
+    font-weight: 800;
+    font-size: 18px;
+    color: #748182;
+}
+
+.Team .container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.team1 .team2{
+    width: 100%;
+}
+
+.Team .container .team1 .team2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.team2:hover img{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.Team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.Team h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.team1{
+    border: 1px solid black;
+    border: none;
+    border-radius: 2% 2%;
+    width: 350px;
+    height: 500px;
+}
+
+.team2{
+    border: 1px solid black;
+    border: none;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.team1:hover .team2 .ef{
+    top: 10;
+}
+
+.team2 .ef{
+    width: 95%;
+    height: 95%;
+    background-color: rgba(250, 250, 250, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.ef .efg{
+    border: 1px solid black;
+    border: none;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.efg .firsticon{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+     color: white;
+}
+
+.firsticon:hover{
+    background-color: white;
+    color: black;
+}
+
+.team1 .team3{
+    background-color: gray;
+    border-radius: 2% 2%;
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+
+.efg .secondicon{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.secondicon:hover{
+    background-color: white;
+    color: black;
+}
+
+.efg .thirdicon{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.thirdicon:hover{
+    background-color: white;
+    color: black;
+}
+
+.efg .fourthicon{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.fourthicon:hover{
+    background-color: white;
+    color: black;
+}
+
+.efg{
+    font-size: 22px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    text-align: center;
+    background-color: white;
+}
+
+.Contact h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.Contact .container{
+    width: 70%;
+}
+
+.Contact .firstser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 320px;
+    height: 200px;
+}
+
+.Contact .firstser .inside1{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 50% 50%;
+    transition-duration: 1s;
+}
+
+.Contact .firstser:hover .inside1{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.Contact .firstser p{
+    font-size: 19px;
+    color: #748182;
+}
+
+.Contact .secondser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 320px;
+    height: 200px;
+}
+
+.Contact .secondser .inside2{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 50% 50%;
+    transition-duration: 1s;
+}
+
+.Contact .secondser:hover .inside2{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.Contact .secondser p{
+    font-size: 19px;
+    color: #748182;
+}
+
+.Contact .thirdser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 320px;
+    height: 200px;
+}
+
+.Contact .thirdser .inside3{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 50% 50%;
+    transition-duration: 1s;
+}
+
+.Contact .thirdser:hover .inside3{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.Contact .thirdser p{
+    font-size: 19px;
+    color: #748182;
+}
+
+.Contact button{
+    border: 1px solid black;
+    border-radius: 5% 5%;
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 40px;
+    transition-duration: 1s;
+    margin-left: -873;
+}
+
+.Contact button:hover{
+    background-color: white;
+    color: black;
+}
+
+.endl{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: black;
+    color: #748182;
+}
